@@ -1,0 +1,16 @@
+call makeSubPackage-4net-4399-ck-feiliujiutian-all.bat
+call makeSubPackage-4net-4399-ck-ktoch-all.bat
+call makeSubPackage-4net-4399-ck-chuandakeji-all.bat
+call makeSubPackage-4net-4399-ck-zhuoyishichang-all.bat
+call makeSubPackage-4net-4399-ck-qianchi-all.bat
+call makeSubPackage-4net-4399-ck-fengxing-all.bat
+call makeSubPackage-4net-4399-ck-litianbaoli-all.bat
+call makeSubPackage-4net-4399-ck-coolpad-all.bat
+call makeSubPackage-4net-4399-ck-7k7k-all.bat
+call makeSubPackage-4net-4399-ck-Nduo-all.bat
+call makeSubPackage-4net-4399-ck-mopin-all.bat
+call makeSubPackage-4net-4399-ck-chongchong-all.bat
+call makeSubPackage-4net-4399-ck-muzhiwan-all.bat
+call makeSubPackage-4net-4399-ck-duotuoshiji-all.bat
+call makeSubPackage-4net-4399-ck-jifeng-all.bat
+call makeSubPackage-4net-4399-ck-yuansuwangluo-all.bat

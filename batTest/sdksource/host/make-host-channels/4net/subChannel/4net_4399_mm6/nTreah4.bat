@@ -1,0 +1,9 @@
+start/min makeSubPackage-4net-4399-mm6-sogouzhushou-all.bat
+start/min makeSubPackage-4net-4399-mm6-wandoujia-all.bat
+start/min makeSubPackage-4net-4399-mm6-zhangmeng-all.bat
+start/min makeSubPackage-4net-4399-mm6-sogoushurufa-all.bat
+start/min makeSubPackage-4net-4399-mm6-baoruan-all.bat
+start/min makeSubPackage-4net-4399-mm6-meizhouchangxiang-all.bat
+start/min makeSubPackage-4net-4399-mm6-sohu-all.bat
+start/min makeSubPackage-4net-4399-mm6-yyc-all.bat
+start/min makeSubPackage-4net-4399-mm6-zhuoyishichang-all.bat

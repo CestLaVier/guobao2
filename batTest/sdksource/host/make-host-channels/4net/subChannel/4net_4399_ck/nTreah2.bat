@@ -1,0 +1,10 @@
+start/min makeSubPackage-4net-4399-ck-mopin-all.bat
+start/min makeSubPackage-4net-4399-ck-chongchong-all.bat
+start/min makeSubPackage-4net-4399-ck-muzhiwan-all.bat
+start/min makeSubPackage-4net-4399-ck-duotuoshiji-all.bat
+start/min makeSubPackage-4net-4399-ck-jifeng-all.bat
+start/min makeSubPackage-4net-4399-ck-yuansuwangluo-all.bat
+start/min makeSubPackage-4net-4399-ck-albb-all.bat
+start/min makeSubPackage-4net-4399-ck-dangle-all.bat
+start/min makeSubPackage-4net-4399-ck-htc-all.bat
+start/min makeSubPackage-4net-4399-ck-huawei-all.bat

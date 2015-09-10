@@ -1,0 +1,16 @@
+start/min makeSubPackage-4net-4399-mm6-feiliujiutian-all.bat
+start/min makeSubPackage-4net-4399-mm6-ktoch-all.bat
+start/min makeSubPackage-4net-4399-mm6-chuandakeji-all.bat
+start/min makeSubPackage-4net-4399-mm6-zhuoyishichang-all.bat
+start/min makeSubPackage-4net-4399-mm6-qianchi-all.bat
+start/min makeSubPackage-4net-4399-mm6-fengxing-all.bat
+start/min makeSubPackage-4net-4399-mm6-litianbaoli-all.bat
+start/min makeSubPackage-4net-4399-mm6-coolpad-all.bat
+start/min makeSubPackage-4net-4399-mm6-7k7k-all.bat
+start/min makeSubPackage-4net-4399-mm6-Nduo-all.bat
+start/min makeSubPackage-4net-4399-mm6-mopin-all.bat
+start/min makeSubPackage-4net-4399-mm6-chongchong-all.bat
+start/min makeSubPackage-4net-4399-mm6-muzhiwan-all.bat
+start/min makeSubPackage-4net-4399-mm6-duotuoshiji-all.bat
+start/min makeSubPackage-4net-4399-mm6-jifeng-all.bat
+start/min makeSubPackage-4net-4399-mm6-yuansuwangluo-all.bat

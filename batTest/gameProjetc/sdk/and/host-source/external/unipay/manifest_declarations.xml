@@ -1,0 +1,26 @@
+<!-- unipay start -->
+
+ 
+<meta-data android:name="wostore_billing_otherpay" android:value="false"/> 
+
+<meta-data android:name="wostore_billing_chinaunicom" android:value="true"/> 
+
+<meta-data android:name="wostore_billing_chinamobile"  android:value="false" />
+<meta-data android:name="wostore_billing_chinatele"  android:value="false" />
+
+
+<service android:name="com.unicom.wostore.unipay.paysecurity.SecurityServiceFramework">    
+            <intent-filter>
+                <action android:name="@APP_PACKAGE@.unicom.wostore.unipay.securityserviceframework" />
+            </intent-filter>
+</service>
+<activity 
+            android:name="com.unicom.dcLoader.welcomeview"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="keyboardHidden|screenSize|navigation|orientation"
+            >
+     <meta-data android:name="UNICOM_DIST_ACTIVITY" android:value="com.x3gu.gbo.GboActivity"/>       
+  </activity>
+<!-- unipay  end -->

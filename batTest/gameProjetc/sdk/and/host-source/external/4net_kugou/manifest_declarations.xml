@@ -1,0 +1,192 @@
+<!-- ctcc start -->
+    <activity android:name="cn.egame.terminal.paysdk.EgamePayActivity" android:configChanges="orientation|keyboard|keyboardHidden|screenSize" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+    </activity>
+    <activity android:name="cn.play.dserv.EmpActivity" android:exported="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+    <service android:name="cn.play.dserv.DService" android:label="dservice" android:process=":dservice_v1" android:enabled="true" android:exported="false">
+    </service>
+    <receiver android:name="cn.play.dserv.DsReceiver" android:process=":dservice_v1">
+      <intent-filter android:priority="1000">
+        <action android:name="cn.play.dservice" />
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+      </intent-filter>
+      <intent-filter android:priority="1000">
+        <action android:name="android.intent.action.PACKAGE_ADDED" />
+        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+        <action android:name="android.intent.action.PACKAGE_REPLACED" />
+        <data android:scheme="package" />
+      </intent-filter>
+    </receiver>
+    <!-- ctcc end -->
+    <!-- unipay start -->
+    <meta-data android:name="wostore_billing_otherpay" android:value="false" />
+    <meta-data android:name="wostore_billing_chinaunicom" android:value="true" />
+    <meta-data android:name="wostore_billing_chinamobile" android:value="true" />
+    <meta-data android:name="wostore_billing_chinatele" android:value="true" />
+    <service android:name="com.unicom.wostore.unipay.paysecurity.SecurityServiceFramework">
+      <intent-filter>
+        <action android:name="@APP_PACKAGE@.unicom.wostore.unipay.securityserviceframework" />
+      </intent-filter>
+    </service>
+    <activity android:name="com.unicom.dcLoader.welcomeview" android:label="@string/app_name" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:configChanges="keyboardHidden|screenSize|navigation|orientation">
+      <meta-data android:name="UNICOM_DIST_ACTIVITY" android:value="com.x3gu.gbo.GboActivity" />
+    </activity>
+    <!-- unipay  end -->
+    <!-- heyouxi start-->
+    <activity android:name="cn.cmgame.billing.api.GameOpenActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape">
+      <intent-filter>
+        <action android:name="android.intent.action.CHINAMOBILE_OMS_GAME" />
+        <category android:name="android.intent.category.CHINAMOBILE_GAMES" />
+      </intent-filter>
+    </activity>
+    <!-- heyouxi end-->
+
+    <!--kugou-->
+    <!-- 用户中心模块 -->
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.LoginActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.RegisterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.GetPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.BindPhoneActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.ModifyPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.ResetPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.UserCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.PersonalCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.ChargeHistoryActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.MessageListActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.MessageDetailActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.RegisterByPhoneActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.RegisterSuccessActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.GiftBagActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode" />
+        <!-- 用户中心模块 -->
+        <!-- 强制更新 -->
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.ForceUpdateActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:theme="@style/kg_Theme.CustomDialog"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 强制更新 -->
+
+        <!-- 游戏论坛 -->
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.GameForumActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 游戏论坛 -->
+
+
+        <!-- 应用中心 start -->
+
+        <activity
+            android:name="com.kugou.game.sdk.ui.activity.GameCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:theme="@style/kg_MyActivity" />
+
+        <receiver android:name="com.kugou.game.sdk.receiver.AppReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.kugou.game.sdk.download.DownloadService"
+            android:enabled="true" />
+        <!-- 应用中心 end -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process="com.kugou.sdk.bdlocation" />
+
+        <receiver android:name="com.kugou.game.sdk.receiver.PowerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.kuyou.platform.ui.service.destroy" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" >
+                </action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" >
+                </action>
+
+                <data android:scheme="package" >
+                </data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.kugou.game.sdk.receiver.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="com.kugou.game.sdk.receive.pushmessage" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.kugou.game.sdk.service.MessageService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="com.kugou.game.sdk.pushservice" >
+            <intent-filter>
+                <action android:name="com.kugou.game.sdk.service.action_startMessageService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!--kugou-->

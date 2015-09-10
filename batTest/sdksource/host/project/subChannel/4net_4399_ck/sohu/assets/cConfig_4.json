@@ -1,0 +1,24 @@
+	if sqlChannelId_int64 != 8888{
+		
+		revel.INFO.Println("特殊cdk")
+		rows, err := Db.Query("Select * from `commoncdk` where `cdkey`=?")
+		
+		localCdk_ := new(CommonCdkey)
+		for rows.Next() {
+			err = rows.Scan(&localCdk.ChannelId, &localCdk.Id, &localCdk.ServerId, &localCdk.AppId, &localCdk.CreateTime, &localCdk.RoleId, &localCdk.CDKEY, &localCdk.UseTime, &localCdk.Status, &localCdk.TypeId)
+			if err != nil {
+				revel.INFO.Println("Fucking Error!2", err)
+			}
+		}
+		
+		if localCdk.RoleId != ""{
+			
+			resultStr := fmt.Sprintf(`{"code":"%d","data":"%s"}`, -1, "此CDK已被使用！")
+			return resultStr, nil
+			
+		}
+		
+		if err != nil {
+			revel.INFO.Println("Fucking Error! models.GetType1")
+		
+	}

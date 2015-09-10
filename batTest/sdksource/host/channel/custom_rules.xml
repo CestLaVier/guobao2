@@ -1,0 +1,20 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<project name="custom_rules" default="release">
+<target name="-pre-compile">
+    <echo message="JARPATH=${toString:project.all.jars.path}"></echo> -->
+
+   <!--  <property name="runtime.dir" value="E:/ude_guobao2/gb2/batTest/sdksource/host/build_and/project/runtime"></property> -->
+<!--    <property name="runtime.dir" value="${jar.libs.dir}/runtime"></property>
+    <path id="runtime.lib">
+        <path path="${toString:project.all.jars.path}"></path>
+        <pathelement location="${runtime.dir}/CMBilling.jar"></pathelement>
+    </path>
+    <path id="project.all.jars.path">
+        <path refid="runtime.lib"></path>
+    </path>
+   
+
+    <echo message="JARPATH=${toString:project.all.jars.path}"></echo>
+</target> 
+
+</project> -->

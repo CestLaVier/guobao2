@@ -1,0 +1,140 @@
+<!-- ctcc start -->
+    <activity android:name="cn.egame.terminal.paysdk.EgamePayActivity" android:configChanges="orientation|keyboard|keyboardHidden|screenSize" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+    </activity>
+    <activity android:name="cn.play.dserv.EmpActivity" android:exported="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+    <service android:name="cn.play.dserv.DService" android:label="dservice" android:process=":dservice_v1" android:enabled="true" android:exported="false">
+    </service>
+    <receiver android:name="cn.play.dserv.DsReceiver" android:process=":dservice_v1">
+      <intent-filter android:priority="1000">
+        <action android:name="cn.play.dservice" />
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+      </intent-filter>
+      <intent-filter android:priority="1000">
+        <action android:name="android.intent.action.PACKAGE_ADDED" />
+        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+        <action android:name="android.intent.action.PACKAGE_REPLACED" />
+        <data android:scheme="package" />
+      </intent-filter>
+    </receiver>
+    <!-- ctcc end -->
+    <!-- unipay start -->
+    <meta-data android:name="wostore_billing_otherpay" android:value="false" />
+    <meta-data android:name="wostore_billing_chinaunicom" android:value="true" />
+    <meta-data android:name="wostore_billing_chinamobile" android:value="true" />
+    <meta-data android:name="wostore_billing_chinatele" android:value="true" />
+    <service android:name="com.unicom.wostore.unipay.paysecurity.SecurityServiceFramework">
+      <intent-filter>
+        <action android:name="@APP_PACKAGE@.unicom.wostore.unipay.securityserviceframework" />
+      </intent-filter>
+    </service>
+    <activity android:name="com.unicom.dcLoader.welcomeview" android:label="@string/app_name" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:configChanges="keyboardHidden|screenSize|navigation|orientation">
+      <meta-data android:name="UNICOM_DIST_ACTIVITY" android:value="com.x3gu.gbo.GboActivity" />
+    </activity>
+    <!-- unipay  end -->
+    <!-- heyouxi start-->
+    <activity android:name="cn.cmgame.billing.api.GameOpenActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape">
+      <intent-filter>
+        <action android:name="android.intent.action.CHINAMOBILE_OMS_GAME" />
+        <category android:name="android.intent.category.CHINAMOBILE_GAMES" />
+      </intent-filter>
+    </activity>
+    <!-- heyouxi end-->
+    
+    <!--baidu-->
+    <!-- baiduadv SDK -->
+     <!-- dksdk_appid表示从开发者平台申请的APPID，一定要填写正确 -->
+        <meta-data android:name="dksdk_appid" android:value="6507610" />
+        <meta-data android:name="dksdk_appkey" android:value="LGdxP7tEbK26QkQ3ZckWdwZu" />
+        <meta-data android:name="dksdk_appsecret" android:value="ce4ur8CYS4gP18cfT64e5nr6jkwNElod" />
+        <meta-data android:name="dksdk_channel" android:value="13744" />
+        <activity
+            android:name="com.duoku.platform.single.ui.DKContainerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/DK.Theme.NoBackGround.NoAnimation"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.duoku.platform.single.ui.DKStartDownloadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/dksdk_theme_dialog"
+            android:screenOrientation="landscape"/>
+    <activity
+            android:name="com.duoku.platform.single.ui.DKLotteryDrawActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/DK.Theme.NoBackGround.NoAnimation"
+            android:screenOrientation="landscape">
+        </activity>
+  
+        
+       
+
+
+        <!-- push sdk start -->
+        <!-- push service client -->
+        <receiver android:name="com.duoku.platform.single.receiver.PushMessageReceiver">
+            <intent-filter
+                android:priority="2147483647"
+                >
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        
+         <!-- push receiver和service -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+        <action android:name="android.intent.action.MEDIA_MOUNTED" />
+        <action android:name="android.intent.action.USER_PRESENT" />
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="com.baidu.android.pushservice.action.frontia.user" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" />
+            </intent-filter>                   
+        </receiver>
+        
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" > 
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+    </service>        
+    <service android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+         <!-- push receiver和service end -->
+                 
+    <receiver 
+            android:name="com.duoku.platform.single.receiver.DKSingleDownloadReceiver">
+            <intent-filter>  
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>  
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>  
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.duoku.platform.single.receiver.DKSingleAppReceiver">
+           <intent-filter>
+              <action android:name="android.intent.action.PACKAGE_ADDED" />
+              <data android:scheme="package" />
+              </intent-filter>
+        </receiver>  
+        <!--baidu-->

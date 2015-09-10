@@ -1,0 +1,15 @@
+   if(price>6){
+            	
+            	String qihooPay = CommonQihoo.doSdkPay(_json); 
+            	
+            	if(qihooPay.equals("login")){
+            	JsonObject jsonParms=new JsonObject();
+				jsonParms.add("code",0);
+				jsonParms.add("msg", "fail");
+				jsonParms.add("payData",CommonUnipay.orderParms.asObject());
+		    	//·µ»Ø
+				CommonBaseSdk.JsonRpcCall(CommonBaseSdk.Lua_Cmd_PayResult,jsonParms);
+            	}
+            	
+                return "";
+                }

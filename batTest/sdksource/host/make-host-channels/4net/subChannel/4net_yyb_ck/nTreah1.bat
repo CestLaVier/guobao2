@@ -1,0 +1,9 @@
+start/min makeSubPackage-4net-yyb_ck-dzjGameCenter-all.bat
+start/min makeSubPackage-4net-yyb_ck-dzjSoftShop-all.bat
+start/min makeSubPackage-4net-yyb_ck-tmsGameCenter-all.bat
+start/min makeSubPackage-4net-yyb_ck-tmsSoftShop-all.bat
+start/min makeSubPackage-4net-yyb_ck-txMobileGame-all.bat
+start/min makeSubPackage-4net-yyb_ck-txMobileManager-all.bat
+start/min makeSubPackage-4net-yyb_ck-txNeiBuQuDao-all.bat
+start/min makeSubPackage-4net-yyb_ck-txQQBrower-all.bat
+start/min makeSubPackage-4net-yyb_ck-txVideo-all.bat

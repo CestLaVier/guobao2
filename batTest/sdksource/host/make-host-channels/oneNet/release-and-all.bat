@@ -1,0 +1,13 @@
+start/min make-host-and-all.bat
+start/min make-host-and-anzhi-all.bat
+start/min make-host-and-baidu-all.bat
+start/min make-host-and-bf-all.bat
+start/min make-host-and-iqiyi-all.bat
+start/min make-host-and-kuwo-all.bat
+start/min make-host-and-lenovo-all.bat
+start/min make-host-and-meitu-all.bat
+start/min make-host-and-oppo-all.bat
+start/min make-host-and-pp-all.bat
+start/min make-host-and-sina-all.bat
+start/min make-host-and-youku-all.bat
+start/min make-host-and-yyh-all.bat

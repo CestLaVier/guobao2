@@ -1,0 +1,10 @@
+start/min make-host-4net_xiaomi-ck-all.bat
+start/min make-host-4net-oppo_ck-all.bat
+start/min make-host-4net-4399_ck-all.bat
+start/min make-host-4net_baidu-ck-all.bat
+start/min make-host-4net-anzhi_ck-all.bat
+start/min make-host-4net-kuwo_ck-all.bat
+start/min make-host-4net-lenovo_ck-all.bat
+start/min make-host-4net-pp_ck-all.bat
+start/min make-host-4net_uc-ck-all.bat
+start/min make-host-4net-vivo_ck-all.bat

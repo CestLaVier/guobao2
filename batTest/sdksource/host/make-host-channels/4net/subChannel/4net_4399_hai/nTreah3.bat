@@ -1,0 +1,10 @@
+start/min makeSubPackage-4net-4399-hai-jinli-all.bat
+start/min makeSubPackage-4net-4399-hai-jiubang-all.bat
+start/min makeSubPackage-4net-4399-hai-lemon-all.bat
+start/min makeSubPackage-4net-4399-hai-lenovo-all.bat
+start/min makeSubPackage-4net-4399-hai-meizu-all.bat
+start/min makeSubPackage-4net-4399-hai-pptv-all.bat
+start/min makeSubPackage-4net-4399-hai-sogouappshop-all.bat
+start/min makeSubPackage-4net-4399-hai-sogoubrowser-all.bat
+start/min makeSubPackage-4net-4399-hai-sogougame-all.bat
+start/min makeSubPackage-4net-4399-hai-sogoushousuo-all.bat

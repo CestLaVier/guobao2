@@ -1,0 +1,9 @@
+start/min makeSubPackage-4net-4399-hai-sogouzhushou-all.bat
+start/min makeSubPackage-4net-4399-hai-wandoujia-all.bat
+start/min makeSubPackage-4net-4399-hai-zhangmeng-all.bat
+start/min makeSubPackage-4net-4399-hai-sogoushurufa-all.bat
+start/min makeSubPackage-4net-4399-hai-baoruan-all.bat
+start/min makeSubPackage-4net-4399-hai-meizhouchangxiang-all.bat
+start/min makeSubPackage-4net-4399-hai-sohu-all.bat
+start/min makeSubPackage-4net-4399-hai-yyc-all.bat
+start/min makeSubPackage-4net-4399-hai-zhuoyishichang-all.bat

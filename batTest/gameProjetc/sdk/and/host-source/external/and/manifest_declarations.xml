@@ -1,0 +1,10 @@
+<!-- and start --> 
+		<activity android:name="cn.cmgame.billing.api.GameOpenActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape">
+			<intent-filter>
+				<action android:name="android.intent.action.CHINAMOBILE_OMS_GAME" />
+				<category android:name="android.intent.category.CHINAMOBILE_GAMES" />
+			</intent-filter>
+		</activity>	
+<!-- and end -->
